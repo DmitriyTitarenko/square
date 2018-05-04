@@ -1,0 +1,36 @@
+.cards {
+    border: 1px solid #000000; 
+    display: block;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    overflow: hidden;
+    margin: 100px;
+}
+
+.window {
+    border:1px solid #000;
+    position: absolute;
+    background: grey;
+    display: block; 
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display:flex;
+    opacity: 0;
+    transition: top 2s ease-in-out,
+                left 2s ease-in-out;
+}
+
+.cards:hover{
+    position: relative;
+}
+
+.cards:hover .window{
+    top: 100px;
+    left: 100px;
+    opacity: 1;
+}
+
